@@ -5,6 +5,8 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
+    # @projects = Project.still_needs_some_work
+    # @projects = Project.where.not(title: "Project 1").limit(5)
   end
 
   # GET /projects/1
